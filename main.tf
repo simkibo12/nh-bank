@@ -9,7 +9,7 @@ resource "ncloud_vpc" "test" {
 resource "ncloud_subnet" "test" {
   vpc_no         = ncloud_vpc.test.vpc_no
   subnet         = cidrsubnet(ncloud_vpc.test.ipv4_cidr_block, 8, 1)
-  zone           = "KR-1
+  zone           = "KR-1"
   network_acl_no = ncloud_vpc.test.default_network_acl_no
   subnet_type    = "PUBLIC"
   usage_type     = "GEN"
