@@ -1,5 +1,5 @@
 resource "ncloud_login_key" "loginkey" {
-  key_name = "test-key"
+  key_name = "nh-test-key"
 }
 
 # resource "ncloud_vpc" "test" {
