@@ -25,7 +25,7 @@ resource "ncloud_login_key" "loginkey" {
 
 resource "ncloud_server" "server" {
     name = "tf-test-vm1"
-    server_image_product_code = "SW.VSVR.OS.LNX64.CNTOS.0708.B050"
+    server_image_product_code = "SPSW0LINUX000139"
 #   server_product_code = "SPSVRSTAND000004"
     login_key_name            = ncloud_login_key.loginkey.key_name
 
